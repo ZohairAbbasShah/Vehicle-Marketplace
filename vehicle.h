@@ -1,14 +1,15 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 
-#define ADS_FILE    "ads.dat"
-#define FAV_FILE    "favorites.dat"
-#define MAX_ADS     200
-#define MAX_FAV     300
-#define MIN_YEAR    1980
-#define MAX_YEAR    2030
-#define AD_ACTIVE   1
-#define AD_SOLD     2
+#define ADS_FILE        "ads.dat"
+#define FAV_FILE        "favorites.dat"
+#define MAX_ADS         200
+#define MAX_FAV         300
+#define MIN_YEAR        1980
+#define MAX_YEAR        2030
+#define AD_ACTIVE       1
+#define AD_SOLD         2
+#define ADMIN_PASSWORD  "admin123"
 
 struct Ad {
     int  adId;
@@ -66,5 +67,11 @@ void addFavorite(char phone[], int adId);
 void removeFavorite(char phone[]);
 void favoritesMenu(void);
 void removeAdFavorites(int adId);
+
+/* admin.c */
+int  adminLogin(void);
+void showAllAds(void);
+void adminDeleteAd(void);
+void showStatistics(void);
 
 #endif
