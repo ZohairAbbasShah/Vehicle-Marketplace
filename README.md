@@ -2,7 +2,7 @@
 
 A console-based **Vehicle Marketplace** (buy and sell vehicles, inspired by PakWheels) developed in **C** for the Programming Fundamentals project at **National University of Computer & Emerging Sciences (FAST-NUCES)**.
 
-Sellers can post vehicles for sale, and buyers can browse, filter, and contact sellers directly using the phone number shown on the ad.
+Sellers can post vehicles for sale, and buyers can browse, filter, save favorites, and contact sellers directly using the phone number shown on the ad. An admin panel is provided to manage ads.
 
 ## 📌 Project Overview
 
@@ -16,7 +16,9 @@ It provides functionality for:
 - Browsing all vehicles for sale
 - Searching and filtering vehicles
 - Viewing full vehicle details with seller contact information
-- Permanently storing ads using files
+- Saving favorite ads
+- Managing ads through an admin panel
+- Permanently storing records using files
 
 ## ❗ Problem Statement
 
@@ -48,6 +50,13 @@ The system works like a small online classifieds website in the console. Sellers
 - Search and filter vehicles
 - View full vehicle details
 - See seller name and phone number to make contact
+- Save ads to favorites and manage them
+
+### Admin Panel
+- Password-protected access
+- View all ads, including sold ones
+- Delete any ad
+- View statistics (total ads, ads for sale, vehicles sold, average price, saved favorites)
 
 ### Input Validation
 - Numbers are checked against valid ranges
